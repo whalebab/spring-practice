@@ -20,6 +20,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools' // html 파일을 컴파일만 해주면 서버 재시작 없이 view 파일 변경 가능
+	//implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2' // db랑 붙을때 데이터베이스가 제공하는 클라이언트
 }
 
 tasks.named('bootBuildImage') {
